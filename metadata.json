@@ -1,0 +1,5 @@
+{
+  "name": "LogCentral",
+  "description": "A centralized log monitoring and management platform for multi-project real-time tracking and analytics.",
+  "requestFramePermissions": []
+}
