@@ -1,0 +1,13 @@
+services:
+  logcentral:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - GEMINI_API_KEY=${GEMINI_API_KEY:-""}
+        - APP_URL=${APP_URL:-""}
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
